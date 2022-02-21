@@ -1,0 +1,44 @@
+/* Give each project a solid black border of 2px */
+.project_card {
+    border: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+/* Give the project description a semi-transparent background with a color hex of #0c1427; */
+/* Change the project description text color to white. */
+
+/* Utilizing position: absolute; for .project_description, lay it over you project image. 
+You will also need to give the parent element a position otherwise the position: absolute; 
+given to the child will be relative to the body. Given that you have a semi-transparent background 
+color this will give a nice effect. */
+.project_description {
+    background-color: rgba(12, 20, 39, 0.3);
+    color: white;
+    position: absolute;
+}
+
+nav {
+    z-index: 1;
+    position: fixed;
+}
+
+#myBtn {
+    position: fixed;
+}
+
+#sun {
+    position: absolute;
+    z-index: 2;
+}
+
+.project_card {
+    position: relative;
+}
+
+#languages #libraries {
+    counter-increment: 10;
+}
+
+
+
